@@ -124,12 +124,12 @@ body {
   float: left;
   display: block;
   color: white;
+  padding: 8px 0px 0px 75px; 
 }
 
 .content {
   display: block;
-  background-color: yellow;
-  margin: 50px 0px;
+  margin: 40px 0px;
   overflow: hidden;
 }
 
@@ -138,6 +138,7 @@ body {
   display: block;
   color: white;
   text-decoration: none;
+  padding: 25px 75px 0px 0px;
 }
 
 .heading-div {
@@ -145,29 +146,65 @@ body {
   margin: 0px auto; 
   text-align: center;
   width: 100%;
+  margin-top: -30px;
 }
 
 .heading {
   position: relative;
   display: inline-block;
-  background-color: green;
 }
 
 .description {
-  background-color: pink;
   float: left;
   width: 40%;
   padding-left: 10%;
 }
 
-.image-wrapper {
-  background-color: purple;
+.roles {
+  width: 90%;
+}
+
+.job-role {
+  clear: both;
+}
+
+.AND {
+  width: 100px;
+}
+
+.even div.text-and {
+  float: right;
+}
+
+.even div.job-image {
+  float: left;
+}
+
+.LoS {
+  width: 150px;
+}
+
+.odd div.text-los {
+  float: left;
+}
+
+.odd div.job-image {
+  float: right;
+}
+
+.text {
+  margin-top: 0;
+}
+
+.headings {
+  font-size: 32px;
+  width: 90%;
 }
 
 .nick-image {
   float: right;
-  width: 30%;
-  padding-right: 10%;
+  width: 28%;
+  padding: 40px 10% 40px 0;
 }
 
 .footer {
@@ -187,11 +224,12 @@ body {
 
 .intro {
   color: #fff;
-  font-size: 16px;
+  font-size: 26px;
+  line-height: 30px;
 }
 
 .name-text {
-  font-size: 32px;
+  font-size: 52px;
 }
 
 /* ==========================================================================

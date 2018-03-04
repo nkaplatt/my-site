@@ -29,7 +29,7 @@
     <script src="js/main.js"></script>
     <nav class="navbar">
       <h3 class="name-header">Nick Platt</h3>
-      <a class="contact" href="mailto:hello@nickplatt.co.uk" onclick="ga('send','event','External Link','Click','Email');"><i class="material-icons" style="color:white;">email</i>Contact</a>
+      <a class="contact" href="mailto:hello@nickplatt.co.uk" onclick="ga('send','event','External Link','Click','Email');"><i class="material-icons" style="color:white;display:inline-block;vertical-align:middle;">email</i>Contact</a>
     </nav>
     <section>
       <div class="content">
@@ -37,30 +37,51 @@
           <h2 class="heading"><span class="intro">Hi there, I'm<br></span><span class="name-text">Nick Platt</span></h2>
         </div>
         <div class="description">
-          <h4>About me</h4>
-          <p>
+          <h4 class="headings">About me</h4>
+          <p class="text">
             This is some text. <br>
             Some more text. <br>
             Even more text here.
           </p>
-          <h4>What I know</h4>
-          <p>
+          <h4 class="headings">What I know</h4>
+          <p class="text">
             This is some text. <br>
             Some more text. <br>
             Even more text here.
           </p>
-          <h4>Things I've done</h4>
-          <p>
-            This is some text. <br>
-            Some more text. <br>
-            Even more text here.
-          </p>
+          <h4 class="headings">Things I've done</h4>
+          <div class="roles" >
+            <div class="job-role even">
+              <div class="job-image">
+                <a href="https://and.digital" onclick="ga('send','event','External Link','Click','AND');">
+                  <img alt="" src="img/AND.png" class="AND" />
+                </a>
+              </div>
+              <div class="job-text">
+                <p class="text-and">
+                  Intern: Software Developer <br>
+                  Year placement with 
+                </p>
+              </div>
+            </div>
+            <div class="job-role odd">
+              <div class="job-text">
+                <p class="text-los">
+                  Co-creator: Team Lead <br>
+                </p>
+              </div>
+              <div class="job-image">
+                  <a href="https://twitter.com/leaveorstayhq" onclick="ga('send','event','External Link','Click','LoS');">
+                    <img alt="" src="img/LoS_banner.jpg" class="LoS"/>
+                  </a>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="image-wrapper">
-          <img class="nick-image" alt="Image of Nick Platt" 
-          srcset="img/nick.mobile.jpg 480w, img/nick.jpg 800w"
-          sizes="(max-width: 480px) 480px, 800px"
-          src="img/nick.jpg" />
+        <img class="nick-image" alt="Image of Nick Platt" 
+        srcset="img/nick.mobile.jpg 480w, img/nick.jpg 800w"
+        sizes="(max-width: 480px) 480px, 800px"
+        src="img/nick.jpg" />
         </div>
       </div>
     </section>
