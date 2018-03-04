@@ -11,9 +11,8 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  line-height: 1;
+  height: 100%;
 }
 
 /*
@@ -27,13 +26,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -41,12 +40,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -69,9 +68,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -79,7 +78,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -87,33 +86,78 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-.navbar {
-  background-color: blue;
-}
-.hero {
+body { 
+  /* The image used */
+  background-image: url("../img/background.jpg");
+
+  /* Full height */
+  height: 100%; 
   position: relative;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Font family */
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.navbar {
+  background-color: rgb(93,95,92);
+  width: 100%;
+  height: 70px;
+}
+
+.name-header {
+  float: left;
+  display: block;
+  color: white;
+}
+
+.content {
+  display: block;
+  background-color: yellow;
+  margin: 50px 0px;
+  overflow: hidden;
+}
+
+.contact {
+  float: right;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.heading-div {
+  position: absolute;
+  margin: 0px auto; 
+  text-align: center;
+  width: 100%;
 }
 
 .heading {
+  position: relative;
+  display: inline-block;
   background-color: green;
-  position: absolute;
-  margin: 0px auto; 
 }
 
-.description-left {
+.description {
   background-color: pink;
   float: left;
-  width: 50%;
+  width: 40%;
+  padding-left: 10%;
 }
 
 .image-wrapper {
@@ -127,13 +171,27 @@ textarea {
 }
 
 .footer {
-  width: 80%;
+  width: 100%;
   bottom: 0;
-  background-color: yellow;
+  padding: 10px 0px;
+  background-color: rgb(25,29,32);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   position: absolute;
+}
+
+.icon {
+  padding: 0px 3px;
+}
+
+.intro {
+  color: #fff;
+  font-size: 16px;
+}
+
+.name-text {
+  font-size: 32px;
 }
 
 /* ==========================================================================
@@ -226,8 +284,57 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/* Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nick-image {
+    width: 30%;
+  }
+
+  .description {
+    background-color: pink;
+    width: 60%;
+    display: block;
+  }
+}
+
+/* Device = Tablets, Ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .nick-image {
+    width: 30%;
+  }
+
+  .description {
+    background-color: pink;
+    width: 50%;
+    display: block;
+  }
+}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .nick-image {
+    width: 30%;
+  }
+
+  .description {
+    background-color: pink;
+    width: 50%;
+    display: block;
+  }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .nick-image {
+    width: 60%;
+    height: 10%;
+  } 
+  
+  .description {
+    background-color: pink;
+    width: 60%;
+    display: block;
+  }
 }
 
 @media print,

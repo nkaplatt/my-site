@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
     <!--[if lte IE 9]>
@@ -25,41 +27,59 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <nav class="navbar" >
-      <h3>Nick Platt</h3>
-      <a href="mailto:hello@nickplatt.co.uk">Contact</a>
+    <nav class="navbar">
+      <h3 class="name-header">Nick Platt</h3>
+      <a class="contact" href="mailto:hello@nickplatt.co.uk" onclick="ga('send','event','External Link','Click','Email');"><i class="material-icons" style="color:white;">email</i>Contact</a>
     </nav>
-    <section class="hero">
-      <div class="heading">
-        <h2>Hi there!</h2>
-      </div>
-      <div class="description-left">
-        <p>
-          This is some text. <br>
-          Some more text. <br>
-          Even more text here.
-        </p>
-      </div>
-      <div class="image-wrapper">
-        <img class="nick-image" alt="Image of Nick Platt" src="../img/nick.jpg" />
+    <section>
+      <div class="content">
+        <div class="heading-div">
+          <h2 class="heading"><span class="intro">Hi there, I'm<br></span><span class="name-text">Nick Platt</span></h2>
+        </div>
+        <div class="description">
+          <h4>About me</h4>
+          <p>
+            This is some text. <br>
+            Some more text. <br>
+            Even more text here.
+          </p>
+          <h4>What I know</h4>
+          <p>
+            This is some text. <br>
+            Some more text. <br>
+            Even more text here.
+          </p>
+          <h4>Things I've done</h4>
+          <p>
+            This is some text. <br>
+            Some more text. <br>
+            Even more text here.
+          </p>
+        </div>
+        <div class="image-wrapper">
+          <img class="nick-image" alt="Image of Nick Platt" 
+          srcset="img/nick.mobile.jpg 480w, img/nick.jpg 800w"
+          sizes="(max-width: 480px) 480px, 800px"
+          src="img/nick.jpg" />
+        </div>
       </div>
     </section>
     <footer class="footer">
-      <a href="https://github.com/nkaplatt">
-        <img width="28px" height="28px" alt="Github icon" src="../img/github_icon.png">
+      <a class="icon" href="https://github.com/nkaplatt" onclick="ga('send','event','External Link','Click','GitHub');">
+        <img width="30px" height="30px" alt="Github icon" src="img/github_icon.png">
       </a>
-      <a href="https://www.linkedin.com/in/nick-platt/">
-        <img width="30px" height="30px" alt="LinkedIn icon" src="../img/linkedin_icon.png">
+      <a class="icon" href="https://www.linkedin.com/in/nick-platt/" onclick="ga('send','event','External Link','Click','LinkedIn');">
+        <img width="30px" height="30px" alt="LinkedIn icon" src="img/linkedin_icon.png">
       </a>
-      <a href="https://twitter.com/nkaplatt">
-        <img width="30px" height="30px" alt="Twitter icon" src="../img/twitter_icon.png">
+      <a class="icon" href="https://twitter.com/nkaplatt" onclick="ga('send','event','External Link','Click','Twitter');">
+        <img width="30px" height="30px" alt="Twitter icon" src="img/twitter_icon.png">
       </a>
     </footer>
     
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview');
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
