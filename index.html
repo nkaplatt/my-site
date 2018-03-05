@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" href="">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -40,9 +40,9 @@
           <h4 class="headings">About me</h4>
           <p class="text">
             I'm currently studying for a BSc in Computer Science <br>
-            at The University of Exeter due to graduate in 2019. <br>
-            I'm an aspiring back end developer with experience in full stack
-            development and some knowledge of Devops. 
+            at The University of Exeter due to graduate in 2019. I'm an aspiring<br> 
+            back end developer with experience in full stack development and<br>
+            some knowledge of Devops. 
           </p>
           <h4 class="headings">What I know</h4>
           <p class="text">
@@ -53,14 +53,14 @@
           <h4 class="headings">Things I've done</h4>
           <div class="roles" >
             <div class="job-role even">
-              <div class="job-image">
+              <!-- <div class="job-image">
                 <a href="https://and.digital" onclick="ga('send','event','External Link','Click','AND');">
                   <img alt="" src="img/AND.png" class="AND" />
                 </a>
-              </div>
+              </div> -->
               <div class="job-text">
                 <p class="text-and">
-                  AND Digital<br>
+                  <a class="job-link" href="https://and.digital" onclick="ga('send','event','External Link','Click','AND');">AND Digital</a><br>
                   Intern: Software Developer<br>
                   Worked on a variety of projects for multiple house hold name clients, roles ranged from
                   creating and maintaining automated testing environments, front end web app building in addition
@@ -71,7 +71,7 @@
             <div class="job-role odd">
               <div class="job-text">
                 <p class="text-los">
-                  Leaveorstay.co.uk <br>
+                  <a class="job-link" href="https://twitter.com/leaveorstayhq" onclick="ga('send','event','External Link','Click','LoS');">Leaveorstay.co.uk </a><br>
                   Co-creator: Team Lead & Full Stack Developer<br>
                   Leading a team of 5 we created a web application and wider platform to help members of the public
                   gather (unbias) information and validate facts regarding the UK's EU referendum, helping them come to 
@@ -81,17 +81,17 @@
                 href="http://www.huffingtonpost.co.uk/nick-platt/how-should-i-vote-in-the-eu-referendum_b_10242366.html">
                   Read about it here!</a>
               </div>
-              <div class="job-image">
+              <!--<div class="job-image">
                 <a href="https://twitter.com/leaveorstayhq" onclick="ga('send','event','External Link','Click','LoS');">
                   <img alt="" src="img/LoS.png" class="LoS"/>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
         <img class="nick-image" alt="Image of Nick Platt" 
-        srcset="img/nick.mobile.jpg 480w, img/nick.jpg 800w"
-        sizes="(max-width: 480px) 480px, 800px"
+        srcset="img/nick-mobile.jpg 1234w, img/nick.jpg 1475w"
+        sizes="(max-width: 480px) 260px"
         src="img/nick.jpg" />
       </div>
     </section>
