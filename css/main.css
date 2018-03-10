@@ -12,7 +12,7 @@
 
 html {
   line-height: 1;
-  height: 100%;
+  min-height: 100%;
 }
 
 /*
@@ -101,7 +101,7 @@ body {
   background-image: url("../img/background.jpg");
 
   /* Full height */
-  height: 100%; 
+  height: 100%;
   position: relative;
 
   /* Center and scale the image nicely */
@@ -118,6 +118,15 @@ body {
   background-color: rgb(93,95,92);
   width: 100%;
   height: 70px;
+  display: flex;
+}
+
+.contact {
+  float: right;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 25px 75px 0px 0px;
 }
 
 .name-header {
@@ -131,14 +140,6 @@ body {
   display: block;
   margin: 40px 0px;
   overflow: hidden;
-}
-
-.contact {
-  float: right;
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 25px 75px 0px 0px;
 }
 
 .heading-div {
@@ -194,7 +195,6 @@ body {
 }
 
 .LoS-link {
-  text-decoration: none;
   color: white;
 }
 
@@ -219,11 +219,11 @@ body {
 
 .footer {
   width: 100%;
+  height: 30px;
   bottom: 0;
+  left: 0;
   padding: 10px 0px;
   background-color: rgb(25,29,32);
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   position: absolute;
 }
@@ -360,6 +360,10 @@ body {
 
 /* Device = Tablets, Ipads (portrait) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    min-height: 100% !important;
+  }
+
   .nick-image {
     width: 30%;
   }
@@ -373,6 +377,10 @@ body {
 
 /* Device = Tablets, Ipads (landscape) */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  html {
+    min-height: 100% !important;
+  }
+  
   .nick-image {
     width: 30%;
   }
@@ -386,6 +394,10 @@ body {
 
 /* Device = Low Resolution Tablets, Mobiles (Landscape) */
 @media (min-width: 481px) and (max-width: 767px) {
+  html {
+    min-height: 100% !important;
+  }
+  
   .nick-image {
     width: 30%;
   }
@@ -399,6 +411,15 @@ body {
 
 /* Device = Most of the Smartphones Mobiles (Portrait) */
 @media (min-width: 300px) and (max-width: 480px) {
+  html {
+    min-height: 100%;
+    color: pink;
+  }
+  
+  .headings {
+    font-size: 20px;
+  }
+  
   .content {
     margin-bottom: 20px;
   }
@@ -410,7 +431,6 @@ body {
     left: 25%;
     float: none;
     position: absolute;
-    background-color: green;
   } 
   
   .description {
@@ -426,11 +446,6 @@ body {
     top: 200px;
     color: black;
     z-index: 1;
-  }
-
-  .footer {
-    width: 100%;
-    bottom: none;
   }
 }
 
