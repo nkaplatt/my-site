@@ -3,3 +3,4 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 /node_modules/
+/v0.1.0/node_modules
