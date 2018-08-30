@@ -1,0 +1,7 @@
+backend:
+  name: git-gateway
+  branch: master
+
+publish_mode: editorial_workflow   # allows drafting of posts
+media_folder: "static/uploads/images"
+public_folder: "/uploads/images"
