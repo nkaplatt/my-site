@@ -35,9 +35,12 @@ module.exports = {
       }
     }
   },
+  /* build in SPA mode */
+  // mode: 'spa',
   /* custom modules by me */
   modules: [
-    ['@nuxtjs/google-analytics']
+    ['@nuxtjs/google-analytics'],
+    '@nuxtjs/pwa'
   ],
  'google-analytics': {
     id: 'UA-111662480-1'
