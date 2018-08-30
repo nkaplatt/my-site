@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'nickplatt.co.uk-site',
+    title: 'Nick Platt',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,6 +34,13 @@ module.exports = {
         })
       }
     }
+  },
+  /* custom modules by me */
+  modules: [
+    ['@nuxtjs/google-analytics']
+  ],
+ 'google-analytics': {
+    id: 'UA-111662480-1'
   }
 }
 
