@@ -2,7 +2,7 @@
   <section class="container">
     <Header />
     <div class="hero">
-      <img class="image-me" alt="Nick Platt" src="~/assets/images/nick-mobile-min.jpg"/>
+      <img class="image-me" alt="Nick Platt" src="~/assets/images/mobile/nick-min-resized.jpg" srcset="~/assets/images/nick-min.jpg 1079w"/>
       <div class="about-me-title">
         A bit <br/> about me
       </div>
@@ -87,7 +87,7 @@ export default {
   font-size: 34px;
   float: right;
   text-align: center;
-  margin: 60px 40px 0 0;
+  margin: 60px 20px 0 0;
   text-shadow:
     -1px -1px 0 $black,
     1px -1px 0 $black,
