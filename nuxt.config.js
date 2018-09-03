@@ -6,11 +6,13 @@ module.exports = {
     title: 'Nick Platt',
     meta: [
       { charset: 'utf-8' },
+      { lang: 'en', 'data-n-header': 'lang' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'My personal website' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat|Raleway' }
     ]
   },
   /*
@@ -44,6 +46,22 @@ module.exports = {
   ],
  'google-analytics': {
     id: 'UA-111662480-1'
+  },
+  /* PWA settings */
+  workbox: {
+    importScripts: [
+      'custom-sw.js'
+    ],
+  },
+  manifest: {
+    name: 'Nick Platt',
+    lang: 'en',
+    short_name: "Nick Platt",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#BFA694",
+    theme_color: "#BFA694",
+    description: "My personal website",
   }
 }
 
