@@ -12,24 +12,14 @@
 </template>
 
 <script>
-export default {
-  data: function () {
-    return {
-      email: false
-    }
-  },
-  watch: {
-    '$route.path': function() {
-      console.log('stuff happened')
-    }
-  }
-}
+
 </script>
 
 <style lang="scss">
 @import '~/assets/scss/variables.scss';
 
 .header {
+  font-family: 'Railway', sans-serif;
   position: absolute;
   top: 0;
   min-width: 100%;

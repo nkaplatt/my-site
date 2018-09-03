@@ -48,7 +48,7 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: 'Montserrat', sans-serif;
   display: block;
   font-weight: 300;
   font-size: 40px;
@@ -66,6 +66,7 @@ export default {
 }
 
 .subtitle {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 24px;
   color: $white;

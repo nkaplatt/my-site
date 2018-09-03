@@ -1,7 +1,9 @@
 <template>
   <section class="job-role">
     <div class="card">
-      <div class="job-title">{{job.title}} - <a :href="job.url" :onclick="job.ga">{{job.company}}</a></div>
+      <div class="job-title">{{job.title}}
+        <br /><a :href="job.url" :onclick="job.ga">{{job.company}}</a>
+      </div>
       <div class="job-description">{{job.description}}</div>
     </div>
   </section>
@@ -21,26 +23,30 @@ export default {
 .job-role {
   width: 100%;
   margin: 5px 0;
+  padding: 0 10px;
 }
 
 .card {
   background-color: $blue-contrast;
-  // color: $header-background;
   color: $white;
   border-radius: 5px;
   padding: 10px 10px;
 
   a {
-    color: $white;
+    color: #BFA694;
+    font-size: 16px;
   }
 }
 
 .job-title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   padding-bottom: 10px;
+  color: #d97b59;
 }
 
 .job-description {
+  font-family: 'Railway', sans-serif;
   font-size: 15px;
   line-height: 1.19;
 }

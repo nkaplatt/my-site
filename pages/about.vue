@@ -7,15 +7,15 @@
         A bit <br/> about me
       </div>
     </div>
+    <div class="about-me">
+      Currently finishing my final year at Exeter University having completed a year long placement.
+      I am a full stack developer with experience in server side languages Python, Nodejs and Golang.
+      Front end experience includes React, Redux and Vuejs.
+      I've taken keen interest in DevOps methods and have experience automating workflows including automated testing strategies and deployments
+      with tools such as Jenkins and AWS.
+    </div>
     <div class="about-content">
-      <div class="about-me">
-        Currently finishing my final year at Exeter University having completed a year long placement.
-        I am a full stack developer with experience in server side languages Python, Nodejs and Golang.
-        Front end experience includes React, Redux and Vuejs.
-        I've taken keen interest in DevOps methods and have experience automating workflows including automated testing strategies,
-        Jenkins and AWS.
-      </div>
-      <div class="about-title">
+      <div class="about-things">
         Things I've done
       </div>
       <JobRole v-for="job in jobs" v-bind:key="job.title" :job="job"/>
@@ -63,8 +63,7 @@ export default {
 
 .container {
   min-height: 100vh;
-  // background-color: rgb(253, 213, 167);
-  background-color: $white;
+  background-color: #e2e2e2;
   margin-top: 55px; 
 }
 
@@ -82,6 +81,7 @@ export default {
 }
 
 .about-me-title {
+  font-family: 'Montserrat', sans-serif;
   color: $white;
   font-size: 34px;
   float: right;
@@ -95,13 +95,21 @@ export default {
 
   @media screen and (max-width: 360px) { // small mobile devices
     font-size: 26px;
-    margin: 75px 25px 0 0;
+    margin: 85px 15px  0 0;
   }
+}
+
+.about-me {
+  font-family: 'Railway', sans-serif;
+  font-size: 15px;
+  color: $header-background;
+  padding: 20px 10px 10px;
+  text-align: center;
 }
 
 .about-content {
   display: flex;
-  margin: 20px 10px 50px;
+  padding: 10px 0px 20px;
   align-items: center;
   flex-direction: column;
 
@@ -110,15 +118,14 @@ export default {
   }
 }
 
-.about-title {
+.about-things {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   font-size: 28px;
-}
-
-.about-me {
-  color: $header-background;
-  padding: 0px 10px;
-  text-align: center;
+  background-color: #BFA694;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #3a4660;
 }
 
 </style>
