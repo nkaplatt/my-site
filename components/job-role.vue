@@ -4,7 +4,14 @@
       <div class="job-title">{{job.title}}
         <br /><a :href="job.url" :onclick="job.ga">{{job.company}}</a>
       </div>
-      <div class="job-description">{{job.description}}</div>
+      <div class="job-description">
+        {{job.description}}
+
+        <a v-if="job.LoSlink" class="LoS-link" onclick="ga('send','event','External Link','Click','Huffington Post Article');"
+        href="http://www.huffingtonpost.co.uk/nick-platt/how-should-i-vote-in-the-eu-referendum_b_10242366.html">
+          Read about it here!
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -49,6 +56,11 @@ export default {
   font-family: 'Railway', sans-serif;
   font-size: 15px;
   line-height: 1.19;
+
+  .LoS-link {
+    font-size: 14px;
+    color: $white;
+  }
 }
 
 </style>

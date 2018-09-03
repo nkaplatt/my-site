@@ -1,7 +1,7 @@
 <template>
   <section class="header">
     <div class="contact">
-      <a class="email" href="mailto:hello@nickplatt.co.uk" onclick="ga('send','event','External Link','Click','Email');"><img class="icon" src="~/assets/svgs/email.svg"/>Contact</a>
+      <a class="email" href="mailto:hello@nickplatt.co.uk" onclick="ga('send','event','External Link','Click','Email');"><img class="icon" alt="email icon" src="~/assets/svgs/email.svg"/>Contact</a>
     </div>
     <div class="navigation">
       <nuxt-link to="/">Home</nuxt-link>

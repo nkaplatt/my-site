@@ -51,7 +51,8 @@ export default {
           'Leading a team of 5 we created a web application and wider platform to help members of the public \
           gather (unbias) information and validate facts regarding the UK\'s EU referendum, helping them come to \
           a conclusion of which way they wanted to vote.',
-        ga: "ga('send','event','External Link','Click','LoS');"
+        ga: "ga('send','event','External Link','Click','LoS');",
+        LoSlink: true
       }]
     }
   }
@@ -68,7 +69,7 @@ export default {
 }
 
 .hero {
-  background-image: url('~/assets/images/temp-background-min.jpg');
+  background-image: url('~/assets/images/mobile/background-min-resized.jpg');
   background-position: center;
   background-size: cover;
   height: 175px;
