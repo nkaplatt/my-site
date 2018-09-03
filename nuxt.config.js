@@ -64,7 +64,7 @@ module.exports = {
     description: "My personal website",
   },
   icon: {
-    iconSrc: '~/assets/images/mobile/pwa-logo-fill.png'
+    iconSrc: '/assets/images/mobile/pwa-logo-fill.png'
   }
 }
 
