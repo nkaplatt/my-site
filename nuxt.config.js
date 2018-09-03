@@ -61,6 +61,9 @@ module.exports = {
     display: "standalone",
     background_color: "#BFA694",
     description: "My personal website",
+  },
+  icon: {
+    iconSrc: '~/assets/images/mobile/pwa-logo-fill.png'
   }
 }
 
