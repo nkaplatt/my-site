@@ -38,10 +38,16 @@ export default {
   color: $white;
   border-radius: 5px;
   padding: 10px 10px;
+  height: 100%;
+  width: 100%;
 
   a {
     color: #BFA694;
     font-size: 16px;
+
+    @media #{$tablet-view} {
+      font-size: 20px;
+    }
   }
 }
 
@@ -50,12 +56,20 @@ export default {
   font-size: 18px;
   padding-bottom: 10px;
   color: #d97b59;
+
+  @media #{$tablet-view} {
+    font-size: 25px;
+  }
 }
 
 .job-description {
   font-family: 'Railway', sans-serif;
   font-size: 15px;
   line-height: 1.19;
+
+  @media #{$tablet-view} {
+    font-size: 18px;
+  }
 
   .LoS-link {
     font-size: 14px;
