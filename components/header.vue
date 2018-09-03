@@ -29,6 +29,15 @@
   padding: 0px 25px;
   justify-content: space-between;
   align-items: center;
+
+  @media #{$tablet-view} {
+    padding: 0px 45px;
+    font-size: 22px;
+  }
+
+  @media #{$desktop-view} {
+    padding: 0px 65px;
+  }
 }
 
 .email {
@@ -44,10 +53,19 @@
 
 .navigation {
   margin-right: -7px; 
+
+  @media #{$desktop-view} {
+    margin-right: -15px; 
+  }
+  
   a {
     color: $header-background;
     text-decoration: none;
     padding-right: 7px;
+
+    @media #{$desktop-view} {
+      padding-right: 15px;
+    }
   }
 }
 </style>

@@ -13,7 +13,8 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat|Raleway' }
-    ]
+    ],
+    noscript: [{ innerHTML: 'This website requires JavaScript, please enable it in your browser.' }]
   },
   /*
   ** Customize the progress bar color

@@ -18,7 +18,9 @@
       <div class="about-things">
         Things I've done
       </div>
-      <JobRole v-for="job in jobs" v-bind:key="job.title" :job="job"/>
+      <div class="job-wrapper">
+        <JobRole v-for="job in jobs" v-bind:key="job.title" :job="job"/>
+      </div>
     </div>
   </section>
 </template>
@@ -74,11 +76,20 @@ export default {
   background-size: cover;
   height: 175px;
   min-width: 100%;
+
+  @media #{$tablet-view} {
+    height: 250px;
+  }
 }
 
 .image-me {
   width: 150px;
   margin: 60px 0 0 20px;
+
+  @media #{$tablet-view} {
+    width: 250px;
+    margin: 60px 0 0 100px;
+  }
 }
 
 .about-me-title {
@@ -96,7 +107,17 @@ export default {
 
   @media screen and (max-width: 360px) { // small mobile devices
     font-size: 26px;
-    margin: 85px 15px  0 0;
+    margin: 85px 15px 0 0;
+  }
+
+  @media #{$tablet-view} {
+    font-size: 46px;
+    margin: 80px 100px 0 0;
+  }
+
+  @media #{$desktop-view} {
+    font-size: 46px;
+    margin: 80px 20% 0 0;
   }
 }
 
@@ -106,6 +127,11 @@ export default {
   color: $header-background;
   padding: 20px 10px 10px;
   text-align: center;
+
+  @media #{$tablet-view} {
+    font-size: 18px;
+    padding: 40px 40px 10px;
+  }
 }
 
 .about-content {
@@ -115,7 +141,7 @@ export default {
   flex-direction: column;
 
   @media #{$desktop-view} {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -127,6 +153,15 @@ export default {
   padding: 10px;
   margin-bottom: 15px;
   color: #3a4660;
+}
+
+.job-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$desktop-view} {
+    flex-direction: row;
+  }
 }
 
 </style>
