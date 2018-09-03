@@ -62,9 +62,6 @@ module.exports = {
     background_color: "#BFA694",
     theme_color: "#BFA694",
     description: "My personal website",
-  },
-  icon: {
-    iconSrc: '/assets/images/mobile/pwa-logo-fill.png'
   }
 }
 
