@@ -1,38 +1,29 @@
 {
-  "name": "my-site",
-  "version": "0.2.0",
-  "description": "",
-  "main": "index.js",
+  "name": "nickplatt.co.uk-site",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "author": "nickplatt <np326@exeter.ac.uk>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nkaplatt/my-site.git"
-  },
-  "author": "Nick Platt",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nkaplatt/my-site/issues"
-  },
-  "homepage": "https://github.com/nkaplatt/my-site#readme",
-  "devDependencies": {
-    "@vue/component-compiler-utils": "^2.2.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.4.0",
-    "eslint-plugin-vue": "^4.7.1",
-    "parcel-bundler": "^1.9.7",
-    "parcel-plugin-eslint": "^1.0.4",
-    "parcel-plugin-vue": "^1.5.0",
-    "vue-template-compiler": "^2.5.17",
-    "workbox-build": "^3.4.1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
-    "cypress": "^3.1.0",
-    "vue": "^2.5.17",
-    "vue-hot-reload-api": "^2.3.0"
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.4.0",
+    "nuxt": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0"
   }
 }
