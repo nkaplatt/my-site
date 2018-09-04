@@ -6,13 +6,19 @@
     <div class="navigation">
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/about/">About</nuxt-link>
-      <nuxt-link to="/blog/">Blog</nuxt-link>
+      <nuxt-link v-if="blog" to="/blog/">Blog</nuxt-link>
     </div>
   </section>
 </template>
 
 <script>
-
+export default {
+  data: () => {
+    return {
+      blog: false
+    }
+  }
+}
 </script>
 
 <style lang="scss">
