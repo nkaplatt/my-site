@@ -2,6 +2,8 @@
 
 > My personal website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/472a1dd8-5d2b-4607-ba57-608fecb3d043/deploy-status)](https://app.netlify.com/sites/focused-villani-d9f149/deploys)
+
 ## Build Setup
 
 ``` bash
