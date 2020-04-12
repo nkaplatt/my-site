@@ -1,11 +1,12 @@
 <template>
   <section class="header">
     <div class="contact">
-      <a class="email" href="mailto:hello@nickplatt.co.uk" onclick="ga('send','event','External Link','Click','Email');"><img class="icon" alt="email icon" src="~/assets/svgs/email.svg"/>Contact</a>
+      <img class="icon" alt="email icon" src="~/assets/svgs/email.svg"/>
+      <a class="email" href="mailto:hello@nickplatt.co.uk" onclick="ga('send','event','External Link','Click','Email');">Contact</a>
     </div>
     <div class="navigation">
-      <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/about/">About</nuxt-link>
+      <nuxt-link v-if="['about'].includes($route.name)" to="/">Home</nuxt-link>
+      <nuxt-link v-if="!['about'].includes($route.name)" to="/about/">About</nuxt-link>
       <nuxt-link v-if="blog" to="/blog/">Blog</nuxt-link>
     </div>
   </section>
@@ -29,10 +30,10 @@ export default {
   position: absolute;
   top: 0;
   min-width: 100%;
-  height: 55px;
+  height: 75px;
   background-color: $white;
   display: flex;
-  padding: 0px 25px;
+  padding: 0px 35px;
   justify-content: space-between;
   align-items: center;
 
@@ -48,17 +49,22 @@ export default {
 
 .email {
   display: flex;
+  font-weight: 600;
+  font-size: 18px;
   align-items: center;
   text-decoration: none;
+  margin-top: 4px;
   color: $header-background;
 
   .icon {
-    padding-right: 5px; 
+    padding-right: 5px;
   }
 }
 
 .navigation {
-  margin-right: -7px; 
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 4px;
 
   @media #{$desktop-view} {
     margin-right: -15px; 
@@ -67,12 +73,16 @@ export default {
   a {
     color: $header-background;
     text-decoration: none;
-    padding-right: 7px;
 
     @media #{$desktop-view} {
       padding-right: 15px;
     }
   }
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
 }
 </style>
 
