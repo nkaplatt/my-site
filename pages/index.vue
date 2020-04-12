@@ -42,12 +42,12 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('~/assets/images/mobile/background-min-resized.jpg');
+  background-image: url('../assets/images/mobile/background-min-resized.jpg');
   background-position: center;
   background-size: cover;
 
    @media #{$desktop-view} {
-    background-image: url('~/assets/images/background-min-desktop.jpg');
+    background-image: url('../assets/images/background-min-desktop.jpg');
   }
 }
 

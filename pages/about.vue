@@ -8,11 +8,7 @@
       </div>
     </div>
     <div class="about-me">
-      Currently finishing my final year at Exeter University having completed a year long placement.
-      I am a full stack developer with experience in server side languages Python, Nodejs and Golang.
-      Front end experience includes React, Redux and Vuejs.
-      I've taken keen interest in DevOps methods and have experience automating workflows including automated testing strategies and deployments
-      with tools such as Jenkins and AWS.
+      Hi I’m Nick, Site Reliability Engineer at TransferWise based in London. <br> I work within the Automation & Tooling team and focus on providing our developers with self service tools to get their code into production. Prior to joining TransferWise I did a myriad of tech jobs alongside studying Computer Science at Exeter University mainly focusing on backend web development.
     </div>
     <div class="about-content">
       <div class="about-things">
@@ -37,6 +33,13 @@ export default {
   data: () => {
     return {
       jobs: [{
+        title: 'Site Reliability Engineer',
+        company: 'TransferWise',
+        url: 'https://transferwise.com/',
+        description:
+          '',
+        ga: "ga('send','event','External Link','Click','TW');",
+      }, {
         title: 'Software Developer',
         company: 'AND Digital',
         url: 'https://and.digital',
@@ -71,7 +74,7 @@ export default {
 }
 
 .hero {
-  background-image: url('~/assets/images/mobile/background-min-resized.jpg');
+  background-image: url('../assets/images/mobile/background-min-resized.jpg');
   background-position: center;
   background-size: cover;
   height: 175px;
@@ -125,7 +128,7 @@ export default {
   font-family: 'Railway', sans-serif;
   font-size: 15px;
   color: $header-background;
-  padding: 20px 10px 10px;
+  padding: 20px 20px 10px;
   text-align: center;
 
   @media #{$tablet-view} {
