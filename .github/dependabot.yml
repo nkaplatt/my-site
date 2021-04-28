@@ -1,0 +1,24 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  target-branch: master
+  ignore:
+  - dependency-name: eslint-plugin-vue
+    versions:
+    - 7.5.0
+    - 7.6.0
+    - 7.7.0
+    - 7.8.0
+  - dependency-name: nuxt
+    versions:
+    - 2.15.0
+    - 2.15.1
+    - 2.15.2
+    - 2.15.3
+  - dependency-name: sass-loader
+    versions:
+    - 10.1.1
