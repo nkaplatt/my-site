@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/pwa": "^2.6.0",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.15.6"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
